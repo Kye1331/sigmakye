@@ -23,6 +23,7 @@
 <body>
   <iframe id="sdfdsf"></iframe>
   <script>
+    const site = "https://"+prompt('site')
     const iframe = document.getElementById("sdfdsf");
     const doc = iframe.contentDocument;
     doc.write(`
@@ -39,7 +40,7 @@
           border: none;
         }
       </style>
-      <object data=prompt('enter url here')></object>
+      <object data="${site}"></object>
     `);
 
   </script>
